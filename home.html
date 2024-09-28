@@ -6,5 +6,10 @@
 <body>
     <h1>Welcome to the lightening fast file metadata microservice</h1>
     <p>Call the /api/fileanalyse route with your file (in the field upfile) to get info on your file! </p>
+    <p>Or use the form below:</p>
+    <form enctype="multipart/form-data" method="POST" action="/api/fileanalyse">
+        <input type="file" name="upfile" />
+        <input type="submit" value="Upload" />
+    </form>
 </body>
 </html>
